@@ -6,19 +6,21 @@ import Home from './components/Home';
 import About from './components/About';
 import Products from './components/Products';
 import NavBar from './components/NavBar';
+import Branches from "./components/Branches";
+import TopBar from './components/TopBar';
+import Resources from './components/Resources'
 
 function App() {
   return (
     <Router>
       <div className="App">
-      <Header/>
-      <NavBar/>
+      <TopBar/>
         <Routes>
           <Route path = "/"element= {<Home/>}/>
           <Route path = "/about" element = {<About/>}/>
           <Route path = "/products" element = {<Products/>}/>
           <Route path = "/branches" element = {<Branches/>}/>
-          <Route path = "/Resources" element = {<Resources/>}/>
+          <Route path = "/resources" element = {<Resources/>}/>
         </Routes>
       <Footer/>
       </div>

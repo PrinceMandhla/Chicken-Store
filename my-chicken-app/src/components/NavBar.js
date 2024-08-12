@@ -18,10 +18,10 @@ function NavBar(){
                         <Link to="/products">Poultry Products</Link>
                     </li>
                     <li>
-                        <Link to="/Branches">About</Link>
+                        <Link to="/branches">Branches</Link>
                     </li>
                     <li>
-                        <Link to="/Resources">Products</Link>
+                        <Link to="/resources">Resources</Link>
                     </li>
                 </ul>
             </nav>

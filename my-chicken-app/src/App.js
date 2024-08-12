@@ -1,22 +1,28 @@
 import React from "react";
 import {BrowserRouter as Router,Route,Routes} from 'react-router-dom';
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Home from './components/Home'
-import About from './components/About.js'
-import Products from './components/Products'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import About from './components/About';
+import Products from './components/Products';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       <Header/>
+      <NavBar/>
         <Routes>
-          <route path = "/"element= {<Home/>}/>
-          <route path = "/about" element = {<About/>}/>
-          <route path = "/products" element = {<Products/>}/>
+          <Route path = "/"element= {<Home/>}/>
+          <Route path = "/about" element = {<About/>}/>
+          <Route path = "/products" element = {<Products/>}/>
         </Routes>
       <Footer/>
-    </div>
+      </div>
+
+    </Router>
+    
   );
 }
 

@@ -1,0 +1,12 @@
+li {
+    display: inline;
+    border: 2px;
+    border-color: black;
+    padding: 9px;
+    background-color: #81b542;
+  }
+
+.nav{
+    height: 40px;
+    background-color: #b54242;
+}

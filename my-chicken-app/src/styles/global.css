@@ -4,3 +4,8 @@ body{
     background-color: #C3BEF7;
     color: #333;
 }
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #000000;
+}

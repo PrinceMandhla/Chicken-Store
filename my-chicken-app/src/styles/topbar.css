@@ -36,8 +36,9 @@
 .profile-circle {
     width: 40px;
     height: 40px;
-    background-color: #376718;
-    color: #e7fc7f;
+    background-color: #fdfffc;
+    color: #000000;
+    border:solid #000000;
     display: flex;
     justify-content: center;
     align-items: center;

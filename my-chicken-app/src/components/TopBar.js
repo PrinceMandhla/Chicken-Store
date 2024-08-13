@@ -7,7 +7,7 @@ function TopBar(){
     return(
         <div className="top-bar">
             <div className="top-bar-right">
-                <button className="contact-button">Contact</button>
+                <button className="contact-button">Contact Us</button>
                 <div className="cart-icon">🛒</div>
                 <div className="profile-circle">P</div>
             </div>

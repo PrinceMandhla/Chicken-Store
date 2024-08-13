@@ -1,6 +1,12 @@
 .navbar {
-  background-color: #2c3e50;
+  background-color: #7bc950;
   padding: 10px;
+  width: 100%; /* Ensure the navbar takes up the full width */
+  /* Keep the navbar at the top of the screen */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
 }
 .navbar ul {
   display: flex;
@@ -17,14 +23,16 @@
 .navbar a {
   display: inline-block;
   padding: 10px 20px;
-  color: #55c5e1;
-  background-color: #34495e;
+  border: 2px solid #e7fc7f;
+
+  color: #e7fc7f;
+  background-color: #63bd3c;
   border-radius: 5px;
   text-decoration: none; /* Remove the underline */
   font-weight: bold;
 }
 
 .navbar a:hover {
-  background-color: #b7bc1a;
-  color: #81ecd5;
+  background-color: #36542f;
+  color: #e7fc7f;
 }

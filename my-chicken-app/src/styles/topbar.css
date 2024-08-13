@@ -6,11 +6,59 @@
     align-items: center;
     width: 100%;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f8f9fa;
+    background-color: #7bc950;
 }
 
+.top-bar-right {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between elements */
+}
 
+.contact-button {
+    background-color: #8bdb49;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: 2px solid #e7fc7f;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
 
+.cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.profile-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #376718;
+    color: #e7fc7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Header and Nav styles (as before) */
+.header-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px; /* Adjusted to leave space for the top-right elements */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+}
 
 

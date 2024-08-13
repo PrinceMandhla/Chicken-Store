@@ -5,7 +5,12 @@ import '../styles/topbar.css';
 
 function TopBar(){
     return(
-        <div>
+        <div className="top-bar">
+            <div className="top-bar-right">
+                <button className="contact-button">Contact</button>
+                <div className="cart-icon">🛒</div>
+                <div className="profile-circle">P</div>
+            </div>
             <div className="top-bar">
                 <div className="header-container">
                     <Header />

@@ -1,12 +1,19 @@
 import React from "react";
 import Header from "./Header";
 import NavBar from "./NavBar";
+import '../styles/topbar.css';
 
 function TopBar(){
     return(
         <div>
-            <Header/>
-            <NavBar/>
+            <div className="top-bar">
+                <div className="header-container">
+                    <Header />
+                </div>
+                <div className="nav-container">
+                    <NavBar />
+                </div>
+            </div>
         </div>
 
     );

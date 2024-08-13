@@ -11,13 +11,13 @@
 }
 
 .navbar li {
-  margin: 0 10px;
+  margin:  10px;
 }
 
 .navbar a {
   display: inline-block;
   padding: 10px 20px;
-  color: #ecf0f1;
+  color: #55c5e1;
   background-color: #34495e;
   border-radius: 5px;
   text-decoration: none; /* Remove the underline */
@@ -25,6 +25,6 @@
 }
 
 .navbar a:hover {
-  background-color: #1abc9c;
-  color: #fff;
+  background-color: #b7bc1a;
+  color: #81ecd5;
 }

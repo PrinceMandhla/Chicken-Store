@@ -5,8 +5,8 @@ import '../styles/navbar.css';
 
 function NavBar(){
     return(
-        <div className="nav" id="navbar">
-            <nav className="navBar"> 
+        <div className="nav" id="navbar2">
+            <nav className="navbar"> 
                 <ul>
                     <li>
                         <Link to="/">Home</Link>

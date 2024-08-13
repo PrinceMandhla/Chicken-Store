@@ -10,21 +10,7 @@
     background-color: #f8f9fa;
 }
 
-.header-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 20px;
-}
 
-.nav-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
 
-/* Adjustments for NavBar elements if needed */
-.nav-container nav {
-    display: flex;
-    gap: 20px;
-}
+
+

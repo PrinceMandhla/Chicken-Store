@@ -1,8 +1,7 @@
 .navbar {
-  background-color: #7bc950;
+  background-color: #c4bebe;
   padding: 10px;
-  width: 100%; /* Ensure the navbar takes up the full width */
-  /* Keep the navbar at the top of the screen */
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -23,10 +22,10 @@
 .navbar a {
   display: inline-block;
   padding: 10px 20px;
-  border: 2px solid #e7fc7f;
+  border: 2px solid #000000;
 
-  color: #e7fc7f;
-  background-color: #63bd3c;
+  color: #000000;
+  background-color: #fdfdfd;
   border-radius: 5px;
   text-decoration: none; /* Remove the underline */
   font-weight: bold;

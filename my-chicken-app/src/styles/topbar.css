@@ -6,7 +6,7 @@
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: #7bc950;
+    background-color: #ffffff;
 }
 
 .top-bar-right {
@@ -19,10 +19,10 @@
 }
 
 .contact-button {
-    background-color: #8bdb49;
-    color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     padding: 10px 20px;
-    border: 2px solid #e7fc7f;
+    border: 2px solid #000000;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;

@@ -6,7 +6,7 @@
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: #efecec;
+    background-color: #3a7e93;
 }
 
 .top-bar-right {
@@ -19,10 +19,10 @@
 }
 
 .contact-button {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #2e7a91;
+    color: #ffffff;
     padding: 10px 20px;
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
@@ -36,9 +36,9 @@
 .profile-circle {
     width: 40px;
     height: 40px;
-    background-color: #fdfffc;
-    color: #000000;
-    border:solid #000000;
+    background-color: #3a7e93;
+    color: #ffffff;
+    border:solid #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,3 +63,8 @@
 }
 
 
+.contact-button:hover{
+    background-color: #fdffff;
+    color: #000000;
+    border-color: #000000;
+}

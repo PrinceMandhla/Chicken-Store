@@ -10,7 +10,7 @@ h2{
 }
 
 .card {
-    background-color: white;
+    background-color: #3a7e93;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
@@ -77,6 +77,8 @@ h2{
 
 .card:hover{
     transform: scale(1.05);
+    border-color: #000000;
+    background-color: #306879;
 }
 
 .sldcontainer{

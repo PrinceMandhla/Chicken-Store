@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #c4bebe;
+  background-color: #3a7e93;
   padding: 10px;
   width: 100%;
   top: 0;
@@ -7,7 +7,7 @@
   right: 0;
   z-index: 1000;
   border-radius: 15px;
-  border: 1px solid #000000; 
+  border: 1px ; 
 }
 .navbar ul {
   display: flex;
@@ -27,7 +27,7 @@
   border: 2px solid #000000;
 
   color: #000000;
-  background-color: #fdfdfd;
+  background-color: #3a7e93;
   border-radius: 5px;
   text-decoration: none; /* Remove the underline */
   font-weight: bold;

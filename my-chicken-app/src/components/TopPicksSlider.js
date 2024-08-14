@@ -11,7 +11,7 @@ const topPicks = [
     { id: 2, name: 'Chick', price: '$5', image: 'chick.jpg' },
     { id: 3, name: 'Eggs', price: '$1', image: 'eggs.jpg' },
     { id: 4, name: 'Hen', price: '$12', image: 'hen.jpg' },
-    { id: 5, name: 'Fertilized Egg', price: '$2', image: 'fertilized-egg.jpg' }
+    { id: 5, name: 'Fertilized Eggs', price: '$2', image: 'fertilized-eggs.jpg' }
 ];
 
 

@@ -1,6 +1,7 @@
 h2{
-    align-items: center;
+    text-align: center;
 }
+
 .card-slider {
     width: 80%;
     margin: 0 auto;
@@ -13,11 +14,16 @@ h2{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    height: 300px; /* Increased height to make the cards longer vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 150px; /* Adjusted height for image */
+    object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
 
@@ -33,4 +39,39 @@ h2{
 .card-info p {
     font-size: 16px;
     color: #333;
+}
+
+/* Custom styles for navigation arrows */
+.slick-prev, .slick-next {
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: -45px; /* Adjust position if necessary */
+}
+
+.slick-next {
+    right: -45px; /* Adjust position if necessary */
+}
+
+/* Ensure arrows are positioned correctly inside the card-slider container */
+.card-slider {
+    position: relative;
+}
+
+
+.card a:hover{
+    width: 330px;
+    height: 330px;
 }

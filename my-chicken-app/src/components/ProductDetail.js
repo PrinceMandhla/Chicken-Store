@@ -2,7 +2,7 @@ import React from "react";
 
 function ProductDetails({ product }){
     if (!product){
-        return <div>Select a product to see details</div>
+        return <div id="ins">Select a product to see details</div>
     }
     return(
         <div className="detail" id="prodet">

@@ -14,7 +14,10 @@ const topPicks = [
     { id: 5, name: 'Fertilized Egg', price: '$2', image: 'fertilized-egg.jpg' }
 ];
 
+
+
 function TopPicksSlider() {
+    
     const settings = {
         dots: true,
         infinite: true,
@@ -23,6 +26,7 @@ function TopPicksSlider() {
         slidesToScroll: 1,
         autoplay: true,        // Automatically slide
         autoplaySpeed: 2000,   // Slide every 2 seconds
+        arrows: true,          // Enable arrows for navigation
         responsive: [
             {
                 breakpoint: 768, // Adjust the number of cards on smaller screens
@@ -39,7 +43,7 @@ function TopPicksSlider() {
             <Slider {...settings}>
                 {topPicks.map(product => (
                     <div key={product.id} className="card">
-                        <img src={product.imageUrl} alt={product.name} />
+                        <img src={`https://via.placeholder.com/150`}  />
                         <div className="card-info">
                             <h3>{product.name}</h3>
                             <p>{product.price}</p>

@@ -1,0 +1,30 @@
+.prodcardbox {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap onto the next line */
+    justify-content: flex-start; /* Align cards to the start */
+    gap: 20px; /* Even space between cards */
+  }
+  
+  .prodcard {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: calc(33.33% - 13.33px); /* Adjust width to account for the gap */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+    text-align: center; /* Center text inside cards */
+  }
+  
+  .prodcard h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .prodcard p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+#ins{
+    text-align: center;
+}

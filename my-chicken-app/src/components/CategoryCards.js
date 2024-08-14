@@ -10,43 +10,39 @@ const poultryData = [
     // Add more poultry types as needed
 ];
 
-function CategoryCards (){
+function CategoryCards() {
     return (
-    <div className="poultry-cards-container">
-        {poultryData.map((poultry, index) => (
-            <div 
-                key={poultry.id} 
-                className={`poultry-card ${index % 2 === 0 ? 'left-card' : 'right-card'}`}
-            >
-                <div className="card-content">
-                    {index % 2 === 0 ? (
-                        <>
-                            <div className="card-info">
-                                <h3>{poultry.name}</h3>
-                                <p>{poultry.description}</p>
-                                <Link to={`/products/${poultry.category}`} className="view-products">View Products</Link>
-                            </div>
+        <div className="poultry-cards-container">
+            {poultryData.map((poultry, index) => {
+                const isEven = index % 2 === 0;
+
+                return (
+                    <div key={poultry.id} className={`poultry-card ${isEven ? 'left-card' : 'right-card'}`}>
+                        <div className="card-content">
+                            {isEven && (
+                                <div className="card-info">
+                                    <h3>{poultry.name}</h3>
+                                    <p>{poultry.description}</p>
+                                    <Link to={`/products/${poultry.category}`} className="view-products">View Products</Link>
+                                </div>
+                            )}
                             <div className="card-image">
                                 <img src={`https://via.placeholder.com/150`} alt={poultry.name} />
                             </div>
-                        </>
-                    ) : (
-                        <>
-                            <div className="card-image">
-                                <img src={`https://via.placeholder.com/150`} alt={poultry.name} />
-                            </div>
-                            <div className="card-info">
-                                <h3>{poultry.name}</h3>
-                                <p>{poultry.description}</p>
-                                <Link to={`/products/${poultry.category}`} className="view-products">View Products</Link>
-                            </div>
-                        </>
-                    )}
-                </div>
-            </div>
-        ))}
-    </div>
-);
+                            {!isEven && (
+                                <div className="card-info">
+                                    <h3>{poultry.name}</h3>
+                                    <p>{poultry.description}</p>
+                                    <Link to={`/products/${poultry.category}`} className="view-products">View Products</Link>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    );
 }
+
 
 export default CategoryCards;

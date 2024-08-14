@@ -11,12 +11,14 @@ h2{
 .card {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
     height: 300px; /* Increased height to make the cards longer vertically */
     display: flex;
     flex-direction: column;
+    width: 80px; /* Reduced width for each card */
+    border: 2px solid #000000; /* Added border around each card */
+    margin: 100px; /* Center each card within its container */
     justify-content: space-between;
 }
 
@@ -71,7 +73,6 @@ h2{
 }
 
 
-.card a:hover{
-    width: 330px;
-    height: 330px;
+.card:hover{
+    transform: scale(1.05);
 }

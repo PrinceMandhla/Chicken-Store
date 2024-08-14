@@ -5,7 +5,7 @@ import "../styles/productdetails.css";
 const mockProducts = [
     { id: 1, name: 'Chicken', price: '$10', category: 'Chickens', description: 'A healthy chicken' },
     { id: 2, name: 'Chick', price: '$5', category: 'Chicks', description: 'A cute chick' },
-    { id: 3, name: 'Egg', price: '$1', category: 'Eggs', description: 'A fresh egg' },
+    { id: 3, name: 'Eggs', price: '$1', category: 'Eggs', description: 'A fresh egg' },
     { id: 4, name: 'Hen', price: '$12', category: 'Chickens', description: 'A productive hen' },
     { id: 5, name: 'Fertilized Egg', price: '$2', category: 'Eggs', description: 'A fertilized egg' }
 ];

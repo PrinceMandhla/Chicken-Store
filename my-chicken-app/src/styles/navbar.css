@@ -6,7 +6,8 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  border-radius: 15px; 
+  border-radius: 15px;
+  border: 1px solid #000000; 
 }
 .navbar ul {
   display: flex;

@@ -9,7 +9,7 @@ import Slider from "react-slick";
 const topPicks = [
     { id: 1, name: 'Chicken', price: '$10', image: 'chicken.jpg' },
     { id: 2, name: 'Chick', price: '$5', image: 'chick.jpg' },
-    { id: 3, name: 'Egg', price: '$1', image: 'egg.jpg' },
+    { id: 3, name: 'Eggs', price: '$1', image: 'eggs.jpg' },
     { id: 4, name: 'Hen', price: '$12', image: 'hen.jpg' },
     { id: 5, name: 'Fertilized Egg', price: '$2', image: 'fertilized-egg.jpg' }
 ];
@@ -40,7 +40,7 @@ function TopPicksSlider() {
 
     return (
         <div className="card-slider">
-            <h2>Top Picks</h2>
+            <h2>Top Picks Today</h2>
             <div className="sldcontainer">
             <Slider {...settings}>
                 {topPicks.map(product => (

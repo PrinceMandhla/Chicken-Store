@@ -1,5 +1,5 @@
-import React,{useEffect, useState} from "react";
-import ProductDetail from './ProductDetail'
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import '../styles/productlist.css';
 
 const mockProducts = [
@@ -8,38 +8,31 @@ const mockProducts = [
     { id: 3, name: 'Egg', price: '$1', category: 'Eggs' },
     { id: 4, name: 'Hen', price: '$12', category: 'Chickens' },
     { id: 5, name: 'Fertilized Egg', price: '$2', category: 'Eggs' }
-  ];
-
-
-
+];
 
 function ProductList() {
+    const [products, setProducts] = useState([]);
 
-    const [selectedProduct, setselectedProduct] = useState(null);
-    const [products,setProducts]=useState([]);
-    const [category,setCategory]=useState('All');
-    useEffect(()=>{
-        // Simulate an API call by delayin by 1second
-        setTimeout(()=>{
+    useEffect(() => {
+        // Simulate an API call by delaying by 1 second
+        setTimeout(() => {
             setProducts(mockProducts);
-        },1000);
-    },[]);
-    
+        }, 1000);
+    }, []);
+
     return (
         <div>
-            <h2>Product List</h2>
-            <div className="prodcardbox" >
-                {products.map(product=>(
-                    <div className="prodcard" key ={product.id} onClick={()=> setselectedProduct(product)}>
+            <h2>All Our Products</h2>
+            <div className="prodcardbox">
+                {products.map(product => (
+                    <Link to={`/products/${product.id}`} key={product.id} className="prodcard">
                         <h3>{product.name}</h3>
                         <p>{product.price}</p>
-                    </div>
+                    </Link>
                 ))}
             </div>
-            <ProductDetail product={selectedProduct}/>
         </div>
     );
 }
 
-export default ProductList
-
+export default ProductList;

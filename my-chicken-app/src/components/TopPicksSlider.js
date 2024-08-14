@@ -22,7 +22,7 @@ function TopPicksSlider() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3, // Number of cards to show at once
+        slidesToShow: 4, // Number of cards to show at once
         slidesToScroll: 1,
         autoplay: true,        // Automatically slide
         autoplaySpeed: 2000,   // Slide every 2 seconds

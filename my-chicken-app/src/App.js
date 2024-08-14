@@ -8,6 +8,7 @@ import Products from './components/Products';
 import NavBar from './components/NavBar';
 import Branches from "./components/Branches";
 import TopBar from './components/TopBar';
+import ProductPage from './components/ProductPage';
 import Resources from './components/Resources'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path = "/about" element = {<About/>}/>
           <Route path = "/products" element = {<Products/>}/>
           <Route path = "/branches" element = {<Branches/>}/>
+          <Route path = "/products/:id" element = {<ProductPage />}/>
           <Route path = "/resources" element = {<Resources/>}/>
         </Routes>
       <Footer/>

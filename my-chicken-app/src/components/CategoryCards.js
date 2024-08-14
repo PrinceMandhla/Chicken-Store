@@ -7,6 +7,8 @@ const poultryData = [
     { id: 2, name: 'Duck', description: 'Known for their flavorful meat and eggs.', category: 'ducks' },
     { id: 3, name: 'Goose', description: 'Larger bird often raised for meat and feathers.', category: 'geese' },
     { id: 4, name: 'Turkey', description: 'Popular especially during festive seasons.', category: 'turkeys' },
+    { id: 5, name: 'Quill', description: 'Larger bird often raised for meat and feathers.', category: 'geese' },
+    { id: 6, name: 'Turkey', description: 'Popular especially during festive seasons.', category: 'turkeys' },
     // Add more poultry types as needed
 ];
 

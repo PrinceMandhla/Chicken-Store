@@ -1,3 +1,16 @@
-#ins{
-    text-align: center;
+#prodet {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #aeacac;
+}
+
+
+
+.product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
 }

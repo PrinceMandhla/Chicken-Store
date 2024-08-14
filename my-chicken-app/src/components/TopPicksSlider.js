@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import "../styles/toppicksslider.css"; // CSS file for styling
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
+
 
 const topPicks = [
     { id: 1, name: 'Chicken', price: '$10', image: 'chicken.jpg' },
@@ -10,32 +15,38 @@ const topPicks = [
 ];
 
 function TopPicksSlider() {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const goToPrevious = () => {
-        setCurrentIndex(currentIndex === 0 ? topPicks.length - 1 : currentIndex - 1);
-    };
-
-    const goToNext = () => {
-        setCurrentIndex(currentIndex === topPicks.length - 1 ? 0 : currentIndex + 1);
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3, // Number of cards to show at once
+        slidesToScroll: 1,
+        autoplay: true,        // Automatically slide
+        autoplaySpeed: 2000,   // Slide every 2 seconds
+        responsive: [
+            {
+                breakpoint: 768, // Adjust the number of cards on smaller screens
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     };
 
     return (
-        <div className="slider-container">
+        <div className="card-slider">
             <h2>Top Picks</h2>
-            <div className="slider">
-                <button className="slider-button prev-button" onClick={goToPrevious}>
-                    &#10094;
-                </button>
-                <div className="card">
-                    <img src={topPicks[currentIndex].image} alt={topPicks[currentIndex].name} />
-                    <h3>{topPicks[currentIndex].name}</h3>
-                    <p>{topPicks[currentIndex].price}</p>
-                </div>
-                <button className="slider-button next-button" onClick={goToNext}>
-                    &#10095;
-                </button>
-            </div>
+            <Slider {...settings}>
+                {topPicks.map(product => (
+                    <div key={product.id} className="card">
+                        <img src={product.imageUrl} alt={product.name} />
+                        <div className="card-info">
+                            <h3>{product.name}</h3>
+                            <p>{product.price}</p>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
         </div>
     );
 }

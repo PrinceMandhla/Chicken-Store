@@ -8,8 +8,8 @@
   
   .poultry-card {
     display: flex;
-    width: 50%;
-    max-width: 200px; /* Limit the card width */
+    width: 100%;
+    max-width: 600px; /* Limit the card width */
   }
   
   .left-card .card-content {
@@ -46,8 +46,8 @@
   }
   
   .card-image {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 0 20px;
   }
   
@@ -84,7 +84,7 @@
   }
   
   .view-products:hover {
-    background-color: #ffffff;
+    background-color: #cdcdcd;
     color: #000000;
   }
   

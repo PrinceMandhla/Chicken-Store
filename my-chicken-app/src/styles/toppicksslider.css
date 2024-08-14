@@ -16,10 +16,11 @@ h2{
     height: 300px; /* Increased height to make the cards longer vertically */
     display: flex;
     flex-direction: column;
-    width: 80px; /* Reduced width for each card */
+    width: 40px; /* Reduced width for each card */
     border: 2px solid #000000; /* Added border around each card */
-    margin: 100px; /* Center each card within its container */
+    margin: 10px; /* Center each card within its container */
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .card img {
@@ -44,10 +45,10 @@ h2{
 }
 
 /* Custom styles for navigation arrows */
-.slick-prev, .slick-next {
+.slick-arrow.slick-prev, .slick-arrow.slick-next {
     font-size: 20px;
     background-color: #333;
-    color: white;
+    color: transparent;
     border-radius: 50%;
     padding: 5px;
     width: 40px;
@@ -60,7 +61,7 @@ h2{
 }
 
 .slick-prev {
-    left: -45px; /* Adjust position if necessary */
+    left: -5px; /* Adjust position if necessary */
 }
 
 .slick-next {
@@ -75,4 +76,8 @@ h2{
 
 .card:hover{
     transform: scale(1.05);
+}
+
+.sldcontainer{
+    background-color: #cfcfcf;
 }

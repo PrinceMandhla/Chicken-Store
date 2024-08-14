@@ -27,6 +27,7 @@ function TopPicksSlider() {
         autoplay: true,        // Automatically slide
         autoplaySpeed: 2000,   // Slide every 2 seconds
         arrows: true,          // Enable arrows for navigation
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 768, // Adjust the number of cards on smaller screens
@@ -40,6 +41,7 @@ function TopPicksSlider() {
     return (
         <div className="card-slider">
             <h2>Top Picks</h2>
+            <div className="sldcontainer">
             <Slider {...settings}>
                 {topPicks.map(product => (
                     <div key={product.id} className="card">
@@ -51,6 +53,8 @@ function TopPicksSlider() {
                     </div>
                 ))}
             </Slider>
+            </div>
+            
         </div>
     );
 }

@@ -31,7 +31,7 @@ function ProductList() {
                     <Link to={`/products/${product.id}`} key={product.id} className="prodcard">
                         <h3>{product.name}</h3>
                         <p>{product.price}</p>
-                        <img src={`https://via.placeholder.com/150`}  />
+                        <img src={`https://via.placeholder.com/150`} alt = "img"  />
                     </Link>
                 ))}
             </div>

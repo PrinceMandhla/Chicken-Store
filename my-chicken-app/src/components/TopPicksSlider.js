@@ -45,7 +45,7 @@ function TopPicksSlider() {
             <Slider {...settings}>
                 {topPicks.map(product => (
                     <div key={product.id} className="card">
-                        <img src={`https://via.placeholder.com/150`}  />
+                        <img src={`https://via.placeholder.com/150`} alt = "img"  />
                         <div className="card-info">
                             <h3>{product.name}</h3>
                             <p>{product.price}</p>

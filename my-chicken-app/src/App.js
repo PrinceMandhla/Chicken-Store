@@ -8,7 +8,7 @@ import Products from './components/Products';
 import Branches from "./components/Branches";
 import TopBar from "./components/TopBar";
 import ProductPage from './components/ProductPage';
-import Resources from './components/Resources'
+import Resources from './components/Resources';
 
 function App() {
   return (

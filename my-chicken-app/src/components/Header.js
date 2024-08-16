@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../imgs/logo.png';
 import { Link } from "react-router-dom";
+import "../styles/header.css"
 function Header() {
     return (
         <div className='hd'>

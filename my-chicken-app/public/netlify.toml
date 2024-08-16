@@ -1,0 +1,4 @@
+[[redirects]]
+from ="/*"
+to=npm "/index.html"
+status=200

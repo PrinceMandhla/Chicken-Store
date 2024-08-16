@@ -1,0 +1,7 @@
+
+.hd {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px; /* Adjusted to leave space for the top-right elements */
+}

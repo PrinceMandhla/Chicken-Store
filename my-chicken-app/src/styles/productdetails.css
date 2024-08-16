@@ -1,14 +1,21 @@
 #prodet {
+    display: flex;
+    justify-content: flex-start;
     margin: 20px;
     padding: 20px;
     border: 1px solid #000000;
     border-radius: 10px;
     background-color: #3a7e93;
 }
-
-
+h2{
+    text-align: center;
+}
+.detail{
+    margin-left: 20px;
+}
 
 .product-image {
+    border-radius: 8px;
     width: 150px;
     height: 150px;
     object-fit: cover;

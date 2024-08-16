@@ -7,6 +7,7 @@
     width: 100%;
     padding: 20px;
     background-color: #3a7e93;
+    justify-content: space-between;
 }
 
 .top-bar-right {
@@ -48,12 +49,7 @@
 }
 
 /* Header and Nav styles (as before) */
-.header-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 10px; /* Adjusted to leave space for the top-right elements */
-}
+
 
 .nav-container {
     display: flex;
@@ -68,3 +64,16 @@
     color: #000000;
     border-color: #000000;
 }
+
+
+.top-bar-left{
+
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 70px; /* Adjust the height as needed */
+    width: auto; /* Maintains the aspect ratio */
+    opacity: 0.8;
+
+  }

@@ -19,14 +19,17 @@ function ProductPage() {
     }
 
     return (
-        <div id="prodet">
-            <div className="detail">
-                <h2>Product Details</h2>
-                <img src="https://via.placeholder.com/150" alt={product.name} className="product-image" />
-                <p>Name: {product.name}</p>
-                <p>Product ID: {product.id}</p>
-                <p>Price: {product.price}</p>
-                <p>Description: {product.description}</p>
+        <div className="det">
+            <h2>Product Details</h2>
+            <div id="prodet">
+            <img src="https://via.placeholder.com/150" alt={product.name} className="product-image" />
+                    
+                <div className="detail">
+                    <p>Name: {product.name}</p>
+                    <p>Product ID: {product.id}</p>
+                    <p>Price: {product.price}</p>
+                    <p>Description: {product.description}</p>
+                </div>
             </div>
         </div>
     );

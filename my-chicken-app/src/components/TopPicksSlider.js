@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "../styles/toppicksslider.css"; // CSS file for styling
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

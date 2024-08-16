@@ -49,7 +49,11 @@
 }
 
 /* Header and Nav styles (as before) */
-
+.profile-circle :hover{
+    background-color: #fdffff;
+    color: #000000;
+    border-color: #000000;
+}
 
 .nav-container {
     display: flex;
